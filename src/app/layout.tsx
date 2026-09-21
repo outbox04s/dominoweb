@@ -1,4 +1,1 @@
-import type { Metadata } from "next";
-import "./globals.css";
-export const metadata: Metadata = { title: { default: "DOMINO Glass Kitchen", template: "%s | DOMINO" }, description: "DOMINO — chuyên sâu tủ bếp cánh kính INOX." };
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="vi"><body>{children}</body></html>; }
+import type {Metadata} from "next";import "./globals.css";import "@/design-system/tokens.css";import {Header,MobileShell,Footer} from "@/components/navigation";export const metadata:Metadata={title:{default:"DOMINO Glass Kitchen",template:"%s | DOMINO"},description:"DOMINO — chuyên sâu tủ bếp cánh kính INOX."};export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="vi"><body><Header/>{children}<Footer/><MobileShell/></body></html>}
