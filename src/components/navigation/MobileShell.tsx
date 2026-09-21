@@ -1,0 +1,1 @@
+"use client";import {useState} from "react";import {BottomNav} from "./BottomNav";import {MobileMenu} from "./MobileMenu";export function MobileShell(){const[open,setOpen]=useState(false);return <><BottomNav onMenu={()=>setOpen(true)}/><MobileMenu open={open} onClose={()=>setOpen(false)}/></>}
