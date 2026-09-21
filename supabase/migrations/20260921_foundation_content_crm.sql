@@ -1,0 +1,6 @@
+-- DOMINO foundation schema
+-- Applied to Supabase project fesfxytnllvpesjmbmkj as migration foundation_content_crm.
+-- Canonical schema domains: product_lines, component_categories, components, product_line_components,
+-- warranty_policies, projects, project_components, posts, post_blocks, media, contacts, leads,
+-- lead_activities, homepage_sections. RLS is enabled on all exposed tables.
+-- Future schema changes MUST be added as new timestamped migrations rather than editing production manually.
