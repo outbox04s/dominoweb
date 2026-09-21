@@ -515,6 +515,33 @@ export type Database = {
           },
         ]
       }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string | null
+          id: string
+          role: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id: string
+          role?: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+          role?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       project_components: {
         Row: {
           component_id: string
@@ -698,7 +725,27 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      is_staff: { Args: never; Returns: boolean }
+      submit_public_lead: {
+        Args: {
+          p_name: string
+          p_need?: string
+          p_phone: string
+          p_source_page?: string
+          p_utm_campaign?: string
+          p_utm_medium?: string
+          p_utm_source?: string
+        }
+        Returns: string
+      }
+      update_lead_status: {
+        Args: {
+          p_lead_id: string
+          p_note?: string
+          p_status: Database["public"]["Enums"]["lead_status"]
+        }
+        Returns: undefined
+      }
     }
     Enums: {
       content_status: "draft" | "published" | "archived"
