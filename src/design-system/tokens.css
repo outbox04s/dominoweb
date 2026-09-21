@@ -1,0 +1,1 @@
+:root{--c-bg:#050505;--c-surface-1:#090909;--c-surface-2:#0d0d0d;--c-surface-3:#121212;--c-text:#f4f4f1;--c-text-2:#a6a6a2;--c-muted:#71716d;--c-border:rgba(255,255,255,.10);--container:1600px;--page-x:clamp(20px,5vw,80px);--header-h:80px;--bottom-nav-h:64px;--ease-out:cubic-bezier(.22,1,.36,1);--motion-fast:200ms;--motion-normal:360ms;--motion-slow:700ms}
