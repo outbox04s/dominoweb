@@ -1,0 +1,3 @@
+-- Development/content bootstrap reference.
+-- Production currently contains product lines Basic, Signature, Premium, Premium Matte, VIP 1, VIP 3
+-- and canonical warranty values agreed for DOMINO.
