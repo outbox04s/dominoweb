@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {getFeaturedProjects,getKnowledgePosts,getProductLines} from "@/features/home/data";
+import {ScrollReveal} from "@/components/ui/ScrollReveal";
 
 type Warranty={frame_value:number|null;frame_unit:string;glass_value:number|null;glass_unit:string|null;maintenance_value:number|null;maintenance_unit:string|null};
 type Product=Awaited<ReturnType<typeof getProductLines>>[number];
@@ -13,6 +14,7 @@ export default async function HomePage(){
  const maxGlass=Math.max(0,...products.map(p=>firstWarranty(p.warranty_policies)?.glass_value??0));
  const lifetime=products.some(p=>firstWarranty(p.warranty_policies)?.frame_unit==="lifetime");
  return <main className="homeV2">
+  <ScrollReveal/>
   <section className="hvHero">
    <div className="hvHeroPhoto"/>
    <div className="hvHeroCopy"><p className="hvKicker">DOMINO / GLASS KITCHEN / SINCE 2015</p><h1>TỦ BẾP<br/>CHO NHỮNG NĂM THÁNG<br/>PHÍA TRƯỚC.</h1><p className="hvLead">Chuyên sâu tủ bếp cánh kính INOX — từ cấu tạo, sản xuất đến lắp đặt và bảo hành.</p><a href="#specialty">KHÁM PHÁ <span>↓</span></a></div>
