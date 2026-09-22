@@ -18,7 +18,7 @@ export default async function AdminLayout({children}:{children:React.ReactNode})
       <Link className="adminBrand" href="/admin/leads"><strong>DOMINO</strong><span>ADMIN</span></Link>
       <nav>
         <p>KHÁCH HÀNG</p><Link href="/admin/leads">Leads</Link>
-        <p>CONTENT</p><span>Sản phẩm</span><span>Công trình</span><span>Bài viết</span><span>Tuyển dụng</span>
+        <p>CONTENT</p><Link href="/admin/products">Sản phẩm</Link><span>Công trình</span><span>Bài viết</span><span>Tuyển dụng</span>
         <p>WEBSITE</p><span>Trang chủ</span><span>Showroom</span><span>Bảo hành</span><span>FAQ</span>
         <p>HỆ THỐNG</p><span>Người dùng</span><span>Cài đặt</span>
       </nav>
