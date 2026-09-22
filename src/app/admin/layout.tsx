@@ -19,7 +19,7 @@ export default async function AdminLayout({children}:{children:React.ReactNode})
       <nav>
         <p>KHÁCH HÀNG</p><Link href="/admin/leads">Leads</Link>
         <p>CONTENT</p><Link href="/admin/products">Sản phẩm</Link><span>Công trình</span><span>Bài viết</span><span>Tuyển dụng</span>
-        <p>WEBSITE</p><span>Trang chủ</span><span>Showroom</span><span>Bảo hành</span><span>FAQ</span>
+        <p>WEBSITE</p><span>Trang chủ</span><span>Showroom</span><Link href="/admin/warranty">Bảo hành</Link><span>FAQ</span>
         <p>HỆ THỐNG</p><span>Người dùng</span><span>Cài đặt</span>
       </nav>
       <div className="adminAccount"><small>{profile.full_name||user.email}</small><em>{profile.role}</em><form action={logout}><button>Đăng xuất</button></form></div>
